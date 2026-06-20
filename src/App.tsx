@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CharacterCounter from "./components/character-counter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -34,6 +35,10 @@ function App() {
       <button onClick={() => updateCounterValue(count, "reset")}>
         Reset
       </button>
+      <br /><hr /><br />
+
+      <CharacterCounter />
+
     </div>
   );
 }
