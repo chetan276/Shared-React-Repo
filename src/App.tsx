@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CharacterCounter from "./components/character-counter";
+import ToggleTheme from "./components/toggle-theme";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,9 +36,12 @@ function App() {
       <button onClick={() => updateCounterValue(count, "reset")}>
         Reset
       </button>
-      <br /><hr /><br />
 
+      <br /><hr /><br />
       <CharacterCounter />
+
+      <br /><hr /><br />
+      <ToggleTheme />
 
     </div>
   );
